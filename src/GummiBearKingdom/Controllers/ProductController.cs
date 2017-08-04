@@ -44,8 +44,8 @@ namespace GummiBearKingdom.Controllers
         //Edit a Product
         public IActionResult Edit(int id)
         {
-            ViewBag.TasteId = new SelectList(db.Tastes, "TasteId", "Name");
             var thisProduct = db.Products.FirstOrDefault(productId => productId.ProductId == id);
+            PopulateTasteDropdownList();
             return View(thisProduct);
         }
 
@@ -70,6 +70,14 @@ namespace GummiBearKingdom.Controllers
             db.Products.Remove(thisProduct);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+        //Get Taste list 
+        private void PopulateTasteDropdownList()
+        {
+            var tastesQuery = from taste in db.Tastes
+                                orderby taste.Name
+                                select taste;
+            ViewBag.TasteId = new SelectList(tastesQuery, "TasteId", "Name");
         }
     }
 }
