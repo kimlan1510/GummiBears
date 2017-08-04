@@ -26,5 +26,18 @@ namespace GummiBearKingdom.Controllers
             return View(thisProduct);
 
         }
+        //Create new Product
+        public IActionResult Create()
+        {
+            ViewBag.TasteId = new SelectList(db.Tastes, "TasteId", "Name");
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create(Product product)
+        {
+            db.Products.Add(product);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
