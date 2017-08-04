@@ -13,10 +13,11 @@ namespace GummiBearKingdom.Controllers
 {
     public class HomeController : Controller
     {
+        private GummiBearKingdomContext db = new GummiBearKingdomContext();
         //HomePage
         public IActionResult Index()
         {
-            return View();
+            return View(db.Tastes.ToList());
         }
     }
 }
