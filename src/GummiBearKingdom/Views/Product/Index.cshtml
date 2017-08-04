@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "All Gummi Bears";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<GummiBearKingdom.Models.Product>
+<h2>Products</h2>
+
+<main class="cards">
+    @foreach (var product in Model)
+    {
+        <article class="card">
+            <img src=@Html.DisplayFor(image => product.Image) alt="Sample photo">
+            <div class="text">
+                <h3>@Html.DisplayFor(name => product.Name)</h3>
+                <p>@Html.ActionLink("Delete", "Delete", new { id = product.ProductId })</p>
+                <p>@Html.ActionLink("Edit", "Edit", new { id = product.ProductId })</p>
+                <button>@Html.ActionLink("Learn More", "Details", new { id = product.ProductId })</button>
+            </div>
+        </article>
+    }
+</main>
+@Html.ActionLink("Create New", "Create")

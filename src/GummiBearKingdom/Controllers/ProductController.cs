@@ -11,12 +11,20 @@ using GummiBearKingdom.Models;
 
 namespace GummiBearKingdom.Controllers
 {
-    public class HomeController : Controller
+    public class ProductController : Controller
     {
-        //HomePage
+        private GummiBearKingdomContext db = new GummiBearKingdomContext();
+        //View all products
         public IActionResult Index()
         {
-            return View();
+            return View(db.Products.ToList());
+        } 
+        //Details view of product
+        public IActionResult Details(int id)
+        {
+            var thisProduct = db.Products.FirstOrDefault(product => product.ProductId == id);
+            return View(thisProduct);
+
         }
     }
 }

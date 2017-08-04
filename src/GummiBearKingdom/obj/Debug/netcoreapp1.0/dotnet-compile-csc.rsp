@@ -194,6 +194,8 @@
 -resource:"C:\Users\epicodus\Desktop\GummiBearKingdom\src\GummiBearKingdom\obj\Debug\netcoreapp1.0\GummiBearKingdomdotnet-compile.deps.json",GummiBearKingdom.deps.json
 "C:\Users\epicodus\Desktop\GummiBearKingdom\src\GummiBearKingdom\Program.cs"
 "C:\Users\epicodus\Desktop\GummiBearKingdom\src\GummiBearKingdom\Startup.cs"
+"C:\Users\epicodus\Desktop\GummiBearKingdom\src\GummiBearKingdom\Controllers\HomeController.cs"
+"C:\Users\epicodus\Desktop\GummiBearKingdom\src\GummiBearKingdom\Controllers\ProductController.cs"
 "C:\Users\epicodus\Desktop\GummiBearKingdom\src\GummiBearKingdom\Migrations\20170804175757_Initial.cs"
 "C:\Users\epicodus\Desktop\GummiBearKingdom\src\GummiBearKingdom\Migrations\20170804175757_Initial.Designer.cs"
 "C:\Users\epicodus\Desktop\GummiBearKingdom\src\GummiBearKingdom\Migrations\20170804180056_ChangeTasteIdNullToTrue.cs"

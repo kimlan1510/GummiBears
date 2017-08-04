@@ -1,0 +1,89 @@
+﻿.jumbotron{
+    background: url("https://s-media-cache-ak0.pinimg.com/originals/36/eb/a6/36eba6308f711872ce0b7f353c7f6728.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 250px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+.jumbotron h2{
+    font-size: 50px;
+    color: white;
+    padding-top:30px;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .card {
+    flex: 0 0 500px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color: white;
+    align-content: center;
+  } 
+  .card img {
+    height: 250px;
+    display: block;
+    margin: auto;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  /*.card .text > button {
+    background-color: tomato;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }*/
+  .card button {
+      background-color: tomato;
+      border: 0;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .card button a {
+      color:white;
+  }
+
+  .card button:hover, .card button:hover a {
+      background-color: #ffbf47;
+      color: white;
+  }
+
+  .navbar {
+      text-align: center;
+    padding-top: 0;
+    margin-top: 0;    
+  }
+  .navbar .nav{
+      float: none;
+  }
+  .navbar .nav li{
+      display:inline-block;
+	  float:none;
+      vertical-align:middle;
+      font-size: 25px;
+      font-weight: bold;
+
+  }
+  .navbar-default {
+      padding-top: 0;
+      background-color: transparent;
+
+  }
+  .collapse navbar-collapse{
+      text-align: center;
+  }
+  li:hover{
+      background-color: #f4eb42;
+  }
+  
