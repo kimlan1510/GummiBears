@@ -23,6 +23,8 @@ namespace GummiBearKingdom.Controllers
         public IActionResult Details(int id)
         {
             var thisProduct = db.Products.FirstOrDefault(product => product.ProductId == id);
+            var foundTaste = db.Tastes.FirstOrDefault(something => something.TasteId == thisProduct.TasteId);
+            ViewBag.Taste = foundTaste.Name;
             return View(thisProduct);
 
         }
@@ -36,6 +38,21 @@ namespace GummiBearKingdom.Controllers
         public IActionResult Create(Product product)
         {
             db.Products.Add(product);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        //Edit a Product
+        public IActionResult Edit(int id)
+        {
+            ViewBag.TasteId = new SelectList(db.Tastes, "TasteId", "Name");
+            var thisProduct = db.Products.FirstOrDefault(productId => productId.ProductId == id);
+            return View(thisProduct);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Product product)
+        {
+            db.Entry(product).State = EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("Index");
         }

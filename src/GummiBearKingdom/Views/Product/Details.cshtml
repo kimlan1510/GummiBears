@@ -11,9 +11,10 @@
         </div>
         <div class="col-lg-8 col-md-8 col-md-8">
             <h2>@Html.DisplayFor(model => model.Name)</h2>
+            <p>@Html.DisplayNameFor(model => model.Taste): @ViewBag.Taste</p>
             <p>@Html.DisplayNameFor(model => model.Cost): @Html.DisplayFor(model => model.Cost)</p>
             <p>@Html.DisplayNameFor(model => model.Country): @Html.DisplayFor(model => model.Country)</p>   
         </div>
     </div>
-    <p>@Html.ActionLink("Back To Location List", "Index")</p>
+    <p>@Html.ActionLink("Back To  List", "Index")</p>
 </div>
