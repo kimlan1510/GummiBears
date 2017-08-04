@@ -15,7 +15,8 @@ namespace GummiBearKingdom.Models
         public string Name { get; set; }
         public string Cost { get; set; }
         public string Country { get; set; }
-        public int TasteId { get; set}
+        public string Image { get; set; }
+        public int TasteId { get; set; }
         public virtual Taste Taste { get; set; }
     }
 }
