@@ -3,17 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using GummiBearKingdom.Models;
 
-// For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace GummiBearKingdom.Controllers
 {
-    public class Create : Controller
+    public class TasteController : Controller
     {
-        // GET: /<controller>/
+        private GummiBearKingdomContext db = new GummiBearKingdomContext();
+        //View all tastes
         public IActionResult Index()
         {
+            return View(db.Tastes.ToList());
+        }
+
+        //Create new Taste
+        public IActionResult Create()
+        {
+            ViewBag.TasteId = new SelectList(db.Tastes, "TasteId", "Name");
             return View();
+        }
+        [HttpPost]
+        public IActionResult Create(Product product)
+        {
+            db.Products.Add(product);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

@@ -5,10 +5,10 @@
 @model IEnumerable<GummiBearKingdom.Models.Taste>
 <h2>tastes</h2>
 
-<main class="cards">
-    @foreach (var taste in Model)
-    {
-        <h3>@Html.DisplayFor(name => taste.Name)</h3>            
-    }
-</main>
-@Html.ActionLink("Create New", "Create")
+@foreach (var taste in Model)
+{
+    <h3>@Html.DisplayFor(name => taste.Name)</h3>            
+}
+
+
+@Html.ActionLink("Create A New Taste", "Create")

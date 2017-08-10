@@ -196,6 +196,7 @@
 "C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Startup.cs"
 "C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Controllers\HomeController.cs"
 "C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Controllers\ProductController.cs"
+"C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Controllers\TasteController.cs"
 "C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Migrations\20170804175757_Initial.cs"
 "C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Migrations\20170804175757_Initial.Designer.cs"
 "C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Migrations\20170804180056_ChangeTasteIdNullToTrue.cs"
