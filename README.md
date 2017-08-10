@@ -6,7 +6,7 @@
 
 ## Description
 
-This webpage allow users to view products on the product page. Users also have the capability to create, edit, delete a product.
+This webpage allow users to view products on the product page. Users also have the capability to create, edit, delete a product. This web site mimics https://www.albanesecandy.com.
 
 
 ## Specifications
@@ -15,6 +15,8 @@ This webpage allow users to view products on the product page. Users also have t
 + Users are able to select individual products to see the product details.
 + Users are able to edit a product.
 + Users are able to delete a product.
++ Users are able to create a taste.
++ Users are able to delete a taste
 
 
 ## Setup/Installation Requirements
