@@ -21,10 +21,9 @@ This webpage allow users to view products on the product page. Users also have t
 
 + Open Windows PowerShell and type in the following code to clone this file <code> git clone https://github.com/kimlan1510/GummiBears</code>
 + In Windows PowerShell, navigate to <code> \GummiBearKingdom\src\GummiBearKingdom\ </code>
-+ In Windows PowerShell, Run these commands to begin creating database
++ In Windows PowerShell, Run these commands to create database
 ```
-dotnet ef migrations add Initial
-dotnet ef database update
+dotnet ef database update 20170804180056_ChangeTasteIdNullToTrue
 ```
 + Open the file using Visual Studio 2015
 
