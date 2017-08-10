@@ -26,9 +26,24 @@ namespace GummiBearKingdom.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Product product)
+        public IActionResult Create(Taste taste)
         {
-            db.Products.Add(product);
+            db.Tastes.Add(taste);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        //Delete a Taste
+        public IActionResult Delete(int id)
+        {
+            var thisTaste = db.Tastes.FirstOrDefault(t => t.TasteId == id);
+            return View(thisTaste);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var thisTaste = db.Tastes.FirstOrDefault(t => t.TasteId == id);
+            db.Tastes.Remove(thisTaste);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

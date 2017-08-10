@@ -7,7 +7,7 @@
 
 @foreach (var taste in Model)
 {
-    <h3>@Html.DisplayFor(name => taste.Name)</h3>            
+    <h3>@Html.DisplayFor(name => taste.Name) | @Html.ActionLink("Delete", "Delete")</h3>            
 }
 
 
