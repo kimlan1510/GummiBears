@@ -12,11 +12,11 @@ namespace GummiBearKingdom.Models
     {
         public Taste()
         {
-            this.Product = new HashSet<Product>();
+            this.Products = new HashSet<Product>();
         }
         [Key]
         public int TasteId { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<Product> Product { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

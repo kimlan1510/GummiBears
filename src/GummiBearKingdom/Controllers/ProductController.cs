@@ -32,6 +32,7 @@ namespace GummiBearKingdom.Controllers
         public IActionResult Create()
         {
             ViewBag.TasteId = new SelectList(db.Tastes, "TasteId", "Name");
+            ViewBag.TasteList = db.Tastes.ToList().LongCount();
             return View();
         }
         [HttpPost]

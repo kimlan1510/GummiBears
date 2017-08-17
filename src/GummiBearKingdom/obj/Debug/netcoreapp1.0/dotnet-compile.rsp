@@ -205,6 +205,8 @@ C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Migrations\20170804175
 C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Migrations\20170804175757_Initial.Designer.cs
 C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Migrations\20170804180056_ChangeTasteIdNullToTrue.cs
 C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Migrations\20170804180056_ChangeTasteIdNullToTrue.Designer.cs
+C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Migrations\20170817210022_ChangeProductToProducts.cs
+C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Migrations\20170817210022_ChangeProductToProducts.Designer.cs
 C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Migrations\GummiBearKingdomContextModelSnapshot.cs
 C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Models\GummiBearContext.cs
 C:\Users\epicodus\Desktop\GummiBears\src\GummiBearKingdom\Models\Product.cs
